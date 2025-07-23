@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+/* Common CSS Start From Here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f5f8ff;
+}
+
+:root {
+  --text-black: #000000;
+  --text-description: #rgba(0, 0, 0, 0.5);
+  --noto-serif: "Noto Serif", serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* Common CSS End Here */
+
+/* Navbar CSS Start From Here */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.menu {
+  gap: 48px;
+}
+
+.menu li a {
+  color: #8987a1;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all linear 0.3s;
+}
+
+.menu li a:hover {
+  color: var(--text-black);
+}
+
+.menu-btn {
+  gap: 48px;
+}
+
+.card-btn {
+  color: var(--text-black);
+  font-size: 1rem;
+  transition: all linear 0.3s;
+}
+.card-btn:hover {
+  color: #8987a1;
+}
+
+.banner {
+  padding: 226px 0 120px 0;
+}
+
+.banner-content {
+  max-width: 570px;
+}
+
+.banner-title {
+  font-family: var(--noto-serif);
+  font-weight: 700;
+  font-size: 4.0625rem;
+  color: var(--text-black);
+}
+
+.banner-title span {
+  font-family: var(--noto-serif);
+  font-weight: 700;
+  font-size: 4.0625rem;
+  color: #e95a08;
+}
+
+.banner-description {
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 13px;
+}
+/* Navbar CSS End Here */
+
+/* Common CSS Start From Here */
+/* Common CSS End Here */
+
+/* Responsive CSS Style From Here */
+
+@media screen and (max-width: 576px) {
+  /* Navbar Responsive Start */
+  .navbar,
+  .banner-content {
+    padding: 0 20px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .banner {
+    padding: 100px 0;
+  }
+
+  .banner-main {
+    flex-direction: column-reverse;
+  }
+
+  .banner-title {
+    max-width: 270px;
+  }
+
+  .banner-content {
+    margin-top: 28px;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-title span {
+    font-size: 1.5rem;
+  }
+  /* Navbar Responsive Ends */
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* Navbar Responsive Start */
+  .header {
+    padding: 0 20px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .banner {
+    padding: 100px 0;
+  }
+
+  .banner-main {
+    flex-direction: column-reverse;
+  }
+
+  .banner-content {
+    padding-top: 28px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-title span {
+    font-size: 1.5rem;
+  }
+
+  .banner-img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* Navbar Responsive Ends */
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* Navbar Responsive Start */
+  .header {
+    padding: 0 20px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .banner {
+    padding: 100px 0;
+  }
+
+  .banner-main {
+    flex-direction: column-reverse;
+  }
+
+  .banner-content {
+    padding-top: 28px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-title span {
+    font-size: 2.5rem;
+  }
+
+  .banner-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* Navbar Responsive Ends */
+}
+
+@media screen and (min-width: 993px) and (max-width: 1140px) {
+  /* Navbar Responsive Start */
+  .header {
+    padding: 0 20px;
+  }
+  /* Navbar Responsive Ends */
+}
+
+@media screen and (min-width: 1141px) and (max-width: 1440px) {
+  /* Navbar Responsive Start */
+  .header {
+    padding: 0 20px;
+  }
+  /* Navbar Responsive Ends */
+}
+
+/* Responsive CSS Style End Here */
