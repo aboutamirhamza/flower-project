@@ -14,7 +14,7 @@ body {
 
 :root {
   --text-black: #000000;
-  --text-description: #rgba(0, 0, 0, 0.5);
+  --text-description: rgba(0, 0, 0, 0.5);
   --noto-serif: "Noto Serif", serif;
 }
 
@@ -25,6 +25,7 @@ ol {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 img {
@@ -52,6 +53,36 @@ li {
 
 .d-flex {
   display: flex;
+}
+
+main section {
+  margin-top: 120px;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 888px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #e95a08;
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-family: var(--noto-serif);
+}
+
+.section-title span {
+  color: var(--text-black);
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-family: var(--noto-serif);
+}
+
+.section-description {
+  color: var(--text-description);
+  font-size: 1.375rem;
+  padding-top: 16px;
 }
 
 /* Common CSS End Here */
@@ -92,7 +123,12 @@ li {
 }
 
 .banner {
-  padding: 226px 0 120px 0;
+  padding: 226px 0 0 0;
+}
+
+.banner-main {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .banner-content {
@@ -115,10 +151,50 @@ li {
 
 .banner-description {
   font-size: 1.375rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-description);
   padding-top: 13px;
 }
 /* Navbar CSS End Here */
+
+/* Our Planets CSS Start From Here */
+.card-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card-items {
+  text-align: center;
+}
+
+.card-name {
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: #111111;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: #111111;
+}
+
+.cart-btn {
+  padding: 20px 80px;
+  background: #e95a08;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all linear 0.3s;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.cart-btn:hover {
+  background: #111111;
+}
+/* Our Planets CSS End Here */
 
 /* Common CSS Start From Here */
 /* Common CSS End Here */
@@ -159,6 +235,28 @@ li {
     font-size: 1.5rem;
   }
   /* Navbar Responsive Ends */
+
+  /* Our Planets Responsive Start */
+  .our-planets {
+    padding: 0 20px;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .card-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart-btn {
+    padding: 15px 50px;
+  }
+  /* Our Planets Responsive Ends */
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -181,7 +279,6 @@ li {
   .banner-content {
     padding-top: 28px;
     text-align: center;
-    margin: 0 auto;
   }
 
   .banner-title {
@@ -191,12 +288,29 @@ li {
   .banner-title span {
     font-size: 1.5rem;
   }
-
-  .banner-img {
-    max-width: 100%;
-    margin: 0 auto;
-  }
   /* Navbar Responsive Ends */
+
+  /* Our Planets Responsive Start */
+  .our-planets {
+    padding: 0 20px;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .card-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart-btn {
+    padding: 15px 50px;
+  }
+  /* Our Planets Responsive Ends */
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -219,7 +333,6 @@ li {
   .banner-content {
     padding-top: 28px;
     text-align: center;
-    margin: 0 auto;
   }
 
   .banner-title {
@@ -229,12 +342,29 @@ li {
   .banner-title span {
     font-size: 2.5rem;
   }
-
-  .banner-img {
-    width: 80%;
-    margin: 0 auto;
-  }
   /* Navbar Responsive Ends */
+
+  /* Our Planets Responsive Start */
+  .our-planets {
+    padding: 0 20px;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .card-main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart-btn {
+    padding: 15px 80px;
+  }
+  /* Our Planets Responsive Ends */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1140px) {
@@ -243,6 +373,24 @@ li {
     padding: 0 20px;
   }
   /* Navbar Responsive Ends */
+
+  /* Our Planets Responsive Start */
+  .our-planets {
+    padding: 0 20px;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .cart-btn {
+    padding: 15px 50px;
+  }
+  /* Our Planets Responsive Ends */
 }
 
 @media screen and (min-width: 1141px) and (max-width: 1440px) {
@@ -251,6 +399,24 @@ li {
     padding: 0 20px;
   }
   /* Navbar Responsive Ends */
+
+  /* Our Planets Responsive Start */
+  .our-planets {
+    padding: 0 20px;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .cart-btn {
+    padding: 15px 70px;
+  }
+  /* Our Planets Responsive Ends */
 }
 
 /* Responsive CSS Style End Here */
