@@ -196,6 +196,56 @@ main section {
 }
 /* Our Planets CSS End Here */
 
+/* Planet Lover CSS Start From Here */
+.planet-lover {
+  margin-top: 170px;
+}
+
+.planet-lover-main {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-img {
+  position: relative;
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  max-width: 50%;
+  animation: round 10s linear infinite;
+}
+
+.heading-title {
+  font-family: var(--noto-serif);
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: var(--text-black);
+  padding-bottom: 20px;
+}
+
+.text-content {
+  max-width: 540px;
+}
+
+.text-content li {
+  color: var(--text-description);
+  font-size: 1.375rem;
+  padding-bottom: 20px;
+}
+/* Planet Lover CSS End Here */
+
 /* Common CSS Start From Here */
 /* Common CSS End Here */
 
@@ -257,6 +307,32 @@ main section {
     padding: 15px 50px;
   }
   /* Our Planets Responsive Ends */
+
+  /* Planet Lover CSS Start From Here */
+  .planet-lover {
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+
+  .planet-lover-main {
+    flex-direction: column;
+  }
+  .trusted-badge {
+    display: none;
+  }
+
+  .heading-title {
+    font-size: 1.5rem;
+  }
+
+  .text-content {
+    margin-top: 18px;
+  }
+
+  .text-content li {
+    font-size: 0.875rem;
+  }
+  /* Planet Lover CSS End Here */
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -311,6 +387,32 @@ main section {
     padding: 15px 50px;
   }
   /* Our Planets Responsive Ends */
+
+  /* Planet Lover CSS Start From Here */
+  .planet-lover {
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+
+  .planet-lover-main {
+    flex-direction: column;
+  }
+  .trusted-badge {
+    display: none;
+  }
+
+  .heading-title {
+    font-size: 1.5rem;
+  }
+
+  .text-content {
+    margin-top: 18px;
+  }
+
+  .text-content li {
+    font-size: 0.875rem;
+  }
+  /* Planet Lover CSS End Here */
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -365,6 +467,32 @@ main section {
     padding: 15px 80px;
   }
   /* Our Planets Responsive Ends */
+
+  /* Planet Lover CSS Start From Here */
+  .planet-lover {
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+
+  .planet-lover-main {
+    flex-direction: column;
+  }
+  .trusted-badge {
+    display: none;
+  }
+
+  .heading-title {
+    font-size: 1.5rem;
+  }
+
+  .text-content {
+    margin-top: 18px;
+  }
+
+  .text-content li {
+    font-size: 0.875rem;
+  }
+  /* Planet Lover CSS End Here */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1140px) {
@@ -391,6 +519,34 @@ main section {
     padding: 15px 50px;
   }
   /* Our Planets Responsive Ends */
+
+  /* Planet Lover CSS Start From Here */
+  .planet-lover {
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+
+  .planet-lover-main {
+    flex-direction: column;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .heading-title {
+    font-size: 1.5rem;
+  }
+
+  .text-content {
+    margin-top: 18px;
+  }
+
+  .text-content li {
+    font-size: 0.875rem;
+  }
+
+  /* Planet Lover CSS End Here */
 }
 
 @media screen and (min-width: 1141px) and (max-width: 1440px) {
@@ -417,6 +573,24 @@ main section {
     padding: 15px 70px;
   }
   /* Our Planets Responsive Ends */
+
+  /* Planet Lover CSS Start From Here */
+  .planet-lover {
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+  .trusted-badge {
+    animation: round 10s linear infinite;
+  }
+
+  .text-content {
+    margin-top: 18px;
+  }
+
+  .text-content li {
+    font-size: 0.875rem;
+  }
+  /* Planet Lover CSS End Here */
 }
 
 /* Responsive CSS Style End Here */
