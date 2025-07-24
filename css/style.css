@@ -246,6 +246,97 @@ main section {
 }
 /* Planet Lover CSS End Here */
 
+/* Latest Deal CSS Start From Here */
+.latest-deal {
+  padding-bottom: 50px;
+}
+
+.latest-deal-content {
+  gap: 10px;
+  margin-top: 120px;
+}
+
+.left-content {
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.right-content {
+  flex: 2;
+}
+
+.card {
+  border-radius: 10px;
+  color: #fff;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-big {
+  border-radius: 10px;
+  color: #fff;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-title {
+  font-family: var(--noto-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card .card-shop {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card-big .card-title {
+  font-family: var(--noto-serif);
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+.card-big .card-shop {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.bloom {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../assets/deal-bloom.png) lightgray 50% / cover no-repeat;
+}
+.ana {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../assets/deal-ana.png) lightgray 50% / cover no-repeat;
+}
+.zabo {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../assets/deal-zabo.png) lightgray 50% / cover no-repeat;
+}
+/* Latest Deal CSS End Here */
+
 /* Common CSS Start From Here */
 /* Common CSS End Here */
 
@@ -254,7 +345,8 @@ main section {
 @media screen and (max-width: 576px) {
   /* Navbar Responsive Start */
   .navbar,
-  .banner-content {
+  .banner-content,
+  .section-head {
     padding: 0 20px;
   }
   .menu {
@@ -333,11 +425,32 @@ main section {
     font-size: 0.875rem;
   }
   /* Planet Lover CSS End Here */
+
+  /* Latest Deal CSS Start From Here */
+  .latest-deal-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .card-big .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-big .card-shop {
+    font-size: 1rem;
+  }
+
+  .card-big {
+    height: 206px;
+  }
+
+  /* Latest Deal CSS End Here */
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   /* Navbar Responsive Start */
-  .header {
+  .header,
+  .section-head {
     padding: 0 20px;
   }
   .menu {
@@ -413,11 +526,32 @@ main section {
     font-size: 0.875rem;
   }
   /* Planet Lover CSS End Here */
+
+  /* Latest Deal CSS Start From Here */
+  .latest-deal-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .card-big .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-big .card-shop {
+    font-size: 1rem;
+  }
+
+  .card-big {
+    height: 206px;
+  }
+
+  /* Latest Deal CSS End Here */
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   /* Navbar Responsive Start */
-  .header {
+  .header,
+  .section-head {
     padding: 0 20px;
   }
   .menu {
@@ -493,11 +627,38 @@ main section {
     font-size: 0.875rem;
   }
   /* Planet Lover CSS End Here */
+
+  /* Latest Deal CSS Start From Here */
+  .latest-deal-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .left-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card-big .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-big .card-shop {
+    font-size: 1rem;
+  }
+
+  .card-big {
+    height: 206px;
+  }
+
+  /* Latest Deal CSS End Here */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1140px) {
   /* Navbar Responsive Start */
-  .header {
+  .header,
+  .section-head {
     padding: 0 20px;
   }
   /* Navbar Responsive Ends */
@@ -547,11 +708,19 @@ main section {
   }
 
   /* Planet Lover CSS End Here */
+
+  /* Latest Deal CSS Start From Here */
+  .latest-deal-content {
+    padding: 0 20px;
+  }
+
+  /* Latest Deal CSS End Here */
 }
 
 @media screen and (min-width: 1141px) and (max-width: 1440px) {
   /* Navbar Responsive Start */
-  .header {
+  .header,
+  .section-head {
     padding: 0 20px;
   }
   /* Navbar Responsive Ends */
@@ -591,6 +760,13 @@ main section {
     font-size: 0.875rem;
   }
   /* Planet Lover CSS End Here */
+
+  /* Latest Deal CSS Start From Here */
+  .latest-deal-content {
+    padding: 0 20px;
+  }
+
+  /* Latest Deal CSS End Here */
 }
 
 /* Responsive CSS Style End Here */
