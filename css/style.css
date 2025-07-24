@@ -390,8 +390,48 @@ li {
 }
 /* Join CSS End Here */
 
-/* Common CSS Start From Here */
-/* Common CSS End Here */
+/* Footer CSS Start From Here */
+footer {
+  padding: 50px 0;
+}
+
+.footer-description {
+  font-size: 1.375rem;
+  color: var(--text-description);
+  padding-top: 20px;
+}
+
+.footer-logo-text {
+  flex: 1.5;
+}
+.footer-link-col {
+  flex: 1;
+  margin-left: 50px;
+}
+.footer-social-media {
+  flex: 1;
+  align-items: start;
+  gap: 16px;
+}
+
+.footer-social-media a:nth-child(2) {
+  margin-top: 8px;
+}
+
+.footer-link-col ul li {
+  padding-bottom: 32px;
+}
+
+.footer-link-col .link-footer {
+  color: #6b7280;
+  font-size: 1rem;
+  transition: all linear 0.3s;
+}
+
+.footer-link-col .link-footer:hover {
+  color: #000;
+}
+/* Footer CSS End Here */
 
 /* Responsive CSS Style From Here */
 
@@ -399,7 +439,8 @@ li {
   /* Navbar Responsive Start */
   .navbar,
   .banner-content,
-  .section-head {
+  .section-head,
+  .footer {
     padding: 0 20px;
   }
   .menu {
@@ -525,12 +566,37 @@ li {
     font-size: 1rem;
   }
   /* Join CSS end Here */
+
+  /* Footer CSS Start */
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-link-col {
+    margin-left: 0;
+  }
+
+  .footer-social-media {
+    gap: 24px;
+    justify-content: start;
+  }
+  /* Footer CSS End */
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   /* Navbar Responsive Start */
   .header,
-  .section-head {
+  .section-head,
+  .footer {
     padding: 0 20px;
   }
   .menu {
@@ -653,12 +719,37 @@ li {
     font-size: 1rem;
   }
   /* Join CSS end Here */
+
+  /* Footer CSS Start */
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-link-col {
+    margin-left: 0;
+  }
+
+  .footer-social-media {
+    gap: 24px;
+    justify-content: start;
+  }
+  /* Footer CSS End */
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   /* Navbar Responsive Start */
   .header,
-  .section-head {
+  .section-head,
+  .footer {
     padding: 0 20px;
   }
   .menu {
@@ -782,12 +873,37 @@ li {
     font-size: 1rem;
   }
   /* Join CSS end Here */
+
+  /* Footer CSS Start */
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-link-col {
+    margin-left: 0;
+  }
+
+  .footer-social-media {
+    gap: 24px;
+    justify-content: start;
+  }
+  /* Footer CSS End */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1140px) {
   /* Navbar Responsive Start */
   .header,
-  .section-head {
+  .section-head,
+  .footer {
     padding: 0 20px;
   }
   /* Navbar Responsive Ends */
@@ -866,12 +982,33 @@ li {
     font-size: 1rem;
   }
   /* Join CSS end Here */
+
+  /* Footer CSS Start */
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-link-col {
+    margin-left: 0;
+  }
+
+  .footer-social-media {
+    gap: 24px;
+    justify-content: start;
+  }
+  /* Footer CSS End */
 }
 
 @media screen and (min-width: 1141px) and (max-width: 1440px) {
   /* Navbar Responsive Start */
   .header,
-  .section-head {
+  .section-head,
+  .footer {
     padding: 0 20px;
   }
   /* Navbar Responsive Ends */
@@ -940,6 +1077,26 @@ li {
     font-size: 1rem;
   }
   /* Join CSS end Here */
+
+  /* Footer CSS Start */
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-link-col {
+    margin-left: 0;
+  }
+
+  .footer-social-media {
+    gap: 24px;
+    justify-content: start;
+  }
+  /* Footer CSS End */
 }
 
 /* Responsive CSS Style End Here */
