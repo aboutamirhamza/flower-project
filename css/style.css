@@ -81,6 +81,44 @@ li {
   padding-top: 16px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+@keyframes showHide {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.message {
+  margin-top: 15px;
+  color: #27ae60;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+input:checked + label + .message {
+  opacity: 1;
+  transform: translateY(0);
+  animation: showHide 3s ease-in-out forwards;
+}
+
 /* Common CSS End Here */
 
 /* Navbar CSS Start From Here */
@@ -189,6 +227,7 @@ li {
   transition: all linear 0.3s;
   text-transform: uppercase;
   margin-top: 20px;
+  display: inline-block;
 }
 
 .cart-btn:hover {
